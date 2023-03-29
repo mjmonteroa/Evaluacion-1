@@ -25,10 +25,10 @@
                 var title = select("header");
                 createElement("h1", "Aceptaste dibujar a " + palabra_pasada).parent(title);
                 var descarga = select("#descargar");
-                descarga.mousePressed(EstaNoEs);
+                descarga.mousePressed(artemania);
                 var borra = select("#borrar");
-                borra.mousePressed(EstaNoEs);
-                elColor = createColorPicker("#45BA23").parent("controles");
+                borra.mousePressed("#borrador");
+                elColor = createColorPicker("#659879").parent("controles");
                 elSlider = createSlider(1, 5, 3).parent("controles");
                 createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
                 background("#fff");
@@ -38,7 +38,7 @@
                 stroke(elColor.color());
                 strokeWeight(elSlider.value());
                 if (mouseIsPressed) {
-                    //aquí falta algo
+                    line(pmouseX, pmouseY, mouseX, mouseY);
                 }
             }
 
@@ -47,7 +47,7 @@
             }
 
             function borrador() {
-                //aquí también falta algo
+               background("#eceff1") ;
             }
 
             function EstaNoEs(){

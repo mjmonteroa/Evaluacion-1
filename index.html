@@ -34,7 +34,7 @@
                 select("#time").html(lasHoras + ":" + losMinutos);
                 select("#level").html("Champion");
                 var elAside = select("aside");
-                createImg(datosArreglados[x].img).parent(elAside).style("width", "100%");
+                createImg("https://digimon.shadowsmith.com/img/devimon.jpg").parent(elAside).style("width", "100%");
                 createA("page.html?data=" + "Devimon", "siguiente página").parent("next");
                 createA("page.html?data=" + "Devimon", "Acepto, dibujaré a " + "Devimon" + " ✅").parent("accept");
                 noCanvas();

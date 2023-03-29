@@ -25,7 +25,7 @@
                 var title = select("header");
                 createElement("h1", "Aceptaste dibujar a " + palabra_pasada).parent(title);
                 var descarga = select("#descargar");
-                descarga.mousePressed(EstaNoEs);
+                descarga.mousePressed("#descarga");
                 var borra = select("#borrar");
                 borra.mousePressed("#borrador");
                 elColor = createColorPicker("#45BA23").parent("controles");

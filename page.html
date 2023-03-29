@@ -17,7 +17,7 @@
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
-            var palabra_pasada = "NombreDelDigimon";
+            var palabra_pasada = "Devimon";
             var elColor;
             var elSlider;
 
@@ -28,10 +28,10 @@
                 descarga.mousePressed(EstaNoEs);
                 var borra = select("#borrar");
                 borra.mousePressed(EstaNoEs);
-                elColor = createColorPicker("#000000").parent("controles");
+                elColor = createColorPicker("#45BA23").parent("controles");
                 elSlider = createSlider(1, 5, 3).parent("controles");
                 createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
-                background("#ddd");
+                background("#fff");
             }
 
             function draw() {
